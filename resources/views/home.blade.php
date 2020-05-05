@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid" id="menu">
+    <div class="row" id="startage">
         <div class="col-12"  style="padding-left: 0px;padding-right: 0px;">
             <div class="portada">
                 <div class="container fluid">
@@ -119,7 +119,7 @@
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top:20px">
+    <div class="row" style="margin-top:20px"  >
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -130,13 +130,18 @@
                     <p style="font-size:1.2em">
                         Sabías que un masaje debido a su acción calmante y analgésica vienen dada mediante actos reflejos que afectan al sistema nervioso central o esto causa la liberaciónde endorfinas que anulan las sensaciones de dolor en el cerebro. El estímulo de los mecanos receptores mediante el masaje se ha demostrado que alivia el dolor y la tensión muscular.
                     </p>
-                    <p><button type="button" class="btn btn-warning">Reservar Ahora</button></p>
+                    <p>
+                        <a href="#startage" id="endpage">
+                            <button type="button" class="btn btn-warning">Reservar Ahora</button>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <style>
     .portada{
         background-image: url(img/bg-principal.jpg);
